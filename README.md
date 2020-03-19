@@ -2,7 +2,7 @@
 L'Otomate Online est une proposition d'extention pour l'accès/contrôle à distance d'un Otomate.
 
 Cette proposition est constitué de trois choses:
-- **Le Collecteur** : il s'agit d'un service installé sur un micro-ordinateur (RaspberryPI 3) que l'on connecte à l'Otomate via sont port usb interne. Le micro-ordinateur est connecté à internet via wifi ou cable ethernet. Cela permet au service de collecter à intervale régulier toute les informations produite par l'Otomate, et de les envoyer sur à un tableau de bord. Le collecteur émet également une interface web accessible par wifi afin de le configurer. Dans une version future, le service sera en mesure de recevoir des commandes issues d'un tableau de bord, afin de les passer À l'Otomate pour qu'elles soit réalisé.
+- **Le Collecteur** : il s'agit d'un service installé sur un micro-ordinateur (RaspberryPI 3) que l'on connecte à l'Otomate via sont port usb interne. Le micro-ordinateur est connecté à internet via wifi ou cable ethernet. Cela permet au service de collecter à intervale régulier toute les informations produite par l'Otomate, et de les envoyer à un tableau de bord. Le collecteur émet également une interface web accessible par wifi afin de le configurer. Dans une version future, le service sera en mesure de recevoir des commandes issues d'un tableau de bord, afin de les passer À l'Otomate pour qu'elles soit réalisé.
 
 - **Le Tableau de bord**: élément clé de la proposition, le tableau de bord est une application web hébergé sur un serveur cloud sur laquelle il est possible de consulter les informations de l'Otomate, et, éventuellement, délivrer des commandes à distance pour ce dernier.
 
