@@ -17,6 +17,8 @@ Cette proposition est constitué de trois choses:
 1. Connectez-vous sur votre Tableau de bord et entrez **l'id** et la **clé secrète** du Collecteur.
 1. Attendez 5 à 10 min, et le tour est joué! 
 
+![aperçu du tableau de bord](https://i.ibb.co/6sk64vQ/7cd818f022fb4daca979c7265495b3cf.png "Logo Title Text 1")
+
 ## Aspects techniques
 
 ### Le Collecteur
