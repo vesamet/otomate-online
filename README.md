@@ -20,8 +20,10 @@ Cette proposition est constitué de trois choses:
 ## Aspects techniques
 
 ### Le Collecteur
-****Hardware:** RaspberryPi version 3
+**Hardware:** RaspberryPi version 3
+
 **OS:** Raspbian
+
 **Applications:**
 - Nodejs (défini l'application de configuration du Collecteur)
 - Python(?) (script récupérant les données de l'Otomate pour les inscrire dans un ficher texte.)  
@@ -34,10 +36,11 @@ Cette proposition est constitué de trois choses:
 - Il envoie une requête à interval régulier au tableau de bord pour y récupérer des commandes ou mises à jour sysème.
 
 ### Le tableau de bord
-Hardware: N'importe quel serveur cloud (AWS, Google Cloud, Azure, etc.) personnel, ou le serveur d'OtomateOnline.com
-OS: Ubuntu 18.04
+**Hardware:** N'importe quel serveur cloud (AWS, Google Cloud, Azure, etc.) personnel, ou le serveur d'OtomateOnline.com
 
-Applications:
+**OS:** Ubuntu 18.04
+
+**Applications:**
 - Docker (afin de déployer/distribuer facilement l'ensemble des applications)
 - Nodejs & Vuejs (constitut l'application qu'est le tableau de bord)
 - Nginx (dessert publiquement le tableau de bord)
