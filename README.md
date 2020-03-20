@@ -9,27 +9,29 @@ Cette proposition est constitué de trois choses:
 ## Résumé de l'installation envisagée
 ### Le Collecteur
 1. Connecter le Collecteur au port usb de l'Otomate.
-1. Connecter le Collecteur a internet:
-+ Option 1: connecter un cable **ethernet** au Collecteur.
-+ Option 2: se connecter au **réseau wifi** qu'émet le collecteur, et accéder à la page web (collecteur.home). Ensuite, entrez les identifiants du wifi que vous voulez utiliser pour le collecteur dans les champs prévus à cet effet. 
-1. (Optionnel) Configurer les options secondaires: intervale de mise à jour, protection par mot de passe, mode veille, etc.
+1. Connecter un cable ethernet au Collecteur.
+1. Connecter le cable d'alimentation au port usb-micro du Collecteur.
 
 ### Le Tableau de bord
 1. Installez l'application du tableau de bord sur votre propre **serveur cloud**, ou obtenez-en un sur otomateonline.com
-1. Connectez-vous sur votre Tableau de bord et récupérer votre **clé secrète**. 
-1. Connectez-vous au wifi du Collecteur et entrez **l'url et la clé secrète** de votre tableau de bord dans les champs prévus à cet effet.
-2. Le tour est joué. Vous pouvez maintenant vous connecter à votre tableau de bord et consulter les informations de votre Otomate.
+1. Connectez-vous sur votre Tableau de bord et entrez **l'id** et la **clé secrète** du Collecteur.
+1. Attendez 5 à 10 min, et le tour est joué! 
 
-## Aspect technique
+## Aspects techniques
 
 ### Le Collecteur
-Hardware: RaspberryPi version 3
-OS: Raspbian
-Applications:
+****Hardware:** RaspberryPi version 3
+**OS:** Raspbian
+**Applications:**
 - Nodejs (défini l'application de configuration du Collecteur)
 - Python(?) (script récupérant les données de l'Otomate pour les inscrire dans un ficher texte.)  
 - Nginx (dessert localement la page web de configuration du collecteur)
 - Hostapd (dessert la page web de configuration à travers un wifi hotspot)
+
+**Fonctionnalités planifiées:**
+- Il est défini par un id, une clé secrète unique ainsi que l'adresse du serveur ou se trouve le tablau de bord, ce qui lui sert d'identifiant pour être reconnu par se dernier.
+- Il peut envoyer les données de l'Otomate au tableau de bord.
+- Il envoie une requête à interval régulier au tableau de bord pour y récupérer des commandes ou mises à jour sysème.
 
 ### Le tableau de bord
 Hardware: N'importe quel serveur cloud (AWS, Google Cloud, Azure, etc.) personnel, ou le serveur d'OtomateOnline.com
@@ -40,4 +42,9 @@ Applications:
 - Nodejs & Vuejs (constitut l'application qu'est le tableau de bord)
 - Nginx (dessert publiquement le tableau de bord)
 - Mysql (store toute les informations délivré par l'Otomate)
+
+**Fonctionnalités planifiées:**
+- Reçois et répond aux requêtes du Collecteur et classifie les données reçu dans un base de donnée.
+- Affiche dans un tableau de bord les-dites données de manière claire et éléguante.
+- Récupère et prépare les commandes destinée à l'Otomate, afin que le Collecteur puisse les demander.
 
