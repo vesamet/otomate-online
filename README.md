@@ -1,4 +1,4 @@
-# Otomate Online
+# 🗜️ Otomate Online
 **L'Otomate Online** est une proposition d'extention pour l'accès/contrôle à distance d'un Otomate.
 
 Cette proposition est constitué de trois choses:
@@ -6,7 +6,9 @@ Cette proposition est constitué de trois choses:
 
 - **Le Tableau de bord**: élément clé de la proposition, le tableau de bord est une application web hébergé sur un serveur cloud sur laquelle il est possible de consulter les informations de l'Otomate, et, éventuellement, délivrer des commandes à distance pour ce dernier.
 
-## Résumé de l'installation envisagée
+![aperçu du tableau de bord](https://i.ibb.co/6sk64vQ/7cd818f022fb4daca979c7265495b3cf.png)
+
+## 🧭 Résumé de l'installation envisagée
 ### Le Collecteur
 1. Connecter le Collecteur au port usb de l'Otomate.
 1. Connecter un cable ethernet au Collecteur.
@@ -17,9 +19,7 @@ Cette proposition est constitué de trois choses:
 1. Connectez-vous sur votre Tableau de bord et entrez **l'id** et la **clé secrète** du Collecteur.
 1. Attendez 5 à 10 min, et le tour est joué! 
 
-![aperçu du tableau de bord](https://i.ibb.co/6sk64vQ/7cd818f022fb4daca979c7265495b3cf.png "Logo Title Text 1")
-
-## Aspects techniques
+## ⚙️ Aspects techniques
 
 ### Le Collecteur
 **Hardware:** RaspberryPi version 3
